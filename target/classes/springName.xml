@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="emp" class="com.velocity.byName.Employee" autowire="byName">
+    	 <property name="name" value="ajay"></property>
+    </bean>
+    <bean id="department" class="com.velocity.byName.Department">
+    	 <property name="dept_name" value="Admin"></property>
+    	 <property name="no_of_employee" value="10"></property>
+    </bean>
+    
+
+</beans>
